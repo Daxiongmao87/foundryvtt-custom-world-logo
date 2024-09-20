@@ -125,6 +125,7 @@ function install_script() {
         # Prepend the custom logo script to join-game.hbs
         echo "$CUSTOM_LOGO_SCRIPT" | cat - "$JOIN_GAME_FILE" > temp && mv temp "$JOIN_GAME_FILE"
         echo "Custom logo script installed successfully."
+	echo "Please restart Foundry for the changes to take effect."
     fi
 }
 
