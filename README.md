@@ -5,7 +5,7 @@
 This project provides an easy way to install, update, or uninstall a custom logo script for Foundry VTT. The script allows you to inject a custom logo into your "Join Game" screen and customize its appearance via the `alt` text.
 
 ## $${\color{red}DISCLAIMER}$$ 
-**IT IS HIGHLY RECOMMENDED** that you backup `resources/app/templates/setup/join-game.hbs` before proceeding.  Ruining this file will not allow you to join any world and will require you to restore the file via the FoundryVTT-XX.XX.zip file (which should be located in the same path as above).
+**IT IS HIGHLY RECOMMENDED** that you backup `resources/app/templates/setup/join-game.hbs` before proceeding.  Ruining this file will not allow you to join any world and will require you to restore the file via the FoundryVTT-##.###.zip file (##.### being the version number of your current install), which should be located in the same path as above.
 
 ## Installation Options
 
