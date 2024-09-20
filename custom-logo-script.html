@@ -1,0 +1,28 @@
+<!-- Custom Logo Script Start -->
+<!-- Custom Logo Script Version: 1.0 -->
+<script>
+setTimeout(function() {
+  var img = document.querySelector('#world-description .app .container .scrollable img[alt^="title-logo"]');
+  if (img) {
+    img.remove();
+    document.querySelector('#main-header h1').remove();
+    document.querySelector('#main-header').appendChild(img);
+    img.style.height = (img.alt.match(/title-logo-(\d+)/) ? img.alt.match(/title-logo-(\d+)/)[1] + "%" : "100%");
+    img.style.objectFit = "contain";
+    document.querySelector('#main-header').style.background = "none";
+  }
+  else {
+      // Create and style the Font Awesome icon
+      var icon = document.createElement('i');
+      icon.className = 'fas fa-question-circle';
+      icon.title = 'To add a custom logo, edit the World Description and add an image with the alt text "title-logo" or "title-logo-XXX" for size.';
+      icon.style.position = 'fixed';
+      icon.style.bottom = '20px';
+      icon.style.right = '20px';
+      icon.style.fontSize = '24px';
+      icon.style.cursor = 'pointer';
+      document.body.appendChild(icon);
+  }
+}, 0);
+</script>
+<!-- Custom Logo Script End -->
