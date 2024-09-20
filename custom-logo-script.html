@@ -1,5 +1,5 @@
 <!-- Custom Logo Script Start -->
-<!-- Custom Logo Script Version: 1.0 -->
+<!-- Custom Logo Script Version: 1.0.1 -->
 <script>
 setTimeout(function() {
   var img = document.querySelector('#world-description .app .container .scrollable img[alt^="title-logo"]');
@@ -7,9 +7,12 @@ setTimeout(function() {
     img.remove();
     document.querySelector('#main-header h1').remove();
     document.querySelector('#main-header').appendChild(img);
-    img.style.height = (img.alt.match(/title-logo-(\d+)/) ? img.alt.match(/title-logo-(\d+)/)[1] + "%" : "100%");
+    img.style.height = "100%";
     img.style.objectFit = "contain";
     document.querySelector('#main-header').style.background = "none";
+    if (img.alt.match(/title-logo-(\d+)/)) {
+      document.querySelector('#main-header').style.height = img.alt.match(/title-logo-(\d+)/)[1] + "px"
+    }
   }
   else {
       // Create and style the Font Awesome icon
