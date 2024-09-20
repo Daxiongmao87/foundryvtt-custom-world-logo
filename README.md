@@ -1,5 +1,7 @@
 # Custom Logo Script Installer for Foundry VTT
 
+![Custom World Logo](https://github.com/Daxiongmao87/foundryvtt-custom-world-logo/blob/main/images/custom_world_logo.png?raw=true)
+
 This project provides an easy way to install, update, or uninstall a custom logo script for Foundry VTT. The script allows you to inject a custom logo into your "Join Game" screen and customize its appearance via the `alt` text.
 
 ## Installation Options
@@ -90,6 +92,23 @@ Paste the contents of `custom-logo-script.html` at the top of the file, then sav
 4. Save the file and exit.
 
 ---
+## Usage
+1. Select the **Edit World** option in the Game Settings tab.
+
+![Edit World Button](https://github.com/Daxiongmao87/foundryvtt-custom-world-logo/blob/main/images/screenshot-options-tab.png?raw=true)
+
+2. Select the **Insert Image** option in the **World Description** editor within the **Edit World** dialog.
+
+![Insert Image Button](https://github.com/Daxiongmao87/foundryvtt-custom-world-logo/blob/main/images/screenshot-edit-world-dialog.png)
+
+3. Enter the **Image Source URL** in the **Source** field within the **Insert Image** dialog.
+
+![Source Field](https://github.com/Daxiongmao87/foundryvtt-custom-world-logo/blob/main/images/screenshot-insert-image-source.png?raw=true)
+
+4. Enter **title-logo** or **title-logo-###** (where **###** is the percent size relative to the original dice logo, allowing you to adjust to your liking. Example: **title-logo-125** sets the image size at **125%**) in the **Alternative Description** field within the **Insert Image** dialog. *
+   - *Note: **100%** is the default size if **title-logo** is used.*
+
+![Alternative Description](https://github.com/Daxiongmao87/foundryvtt-custom-world-logo/blob/main/images/screenshot-insert-image-alternative-description.png?raw=true)
 
 ## Troubleshooting
 
