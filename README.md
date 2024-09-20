@@ -105,8 +105,9 @@ Paste the contents of `custom-logo-script.html` at the top of the file, then sav
 
 ![Source Field](https://github.com/Daxiongmao87/foundryvtt-custom-world-logo/blob/main/images/screenshot-insert-image-source.png?raw=true)
 
-4. Enter **title-logo** or **title-logo-###** (where **###** is the percent size relative to the original dice logo, allowing you to adjust to your liking. Example: **title-logo-125** sets the image size at **125%**) in the **Alternative Description** field within the **Insert Image** dialog.
-   - *Note: **100%** is the default size if **title-logo** is used.*
+4. Enter **title-logo** or **title-logo-###** (where **###** is the desired **height in pixels** allowing you to adjust to your liking) in the **Alternative Description** field within the **Insert Image** dialog.
+   - *Example: **title-logo-125** sets the image height at **125px**.*
+   - *Note: The image width will scale appropriately to maintain aspect ratio.*
 
 ![Alternative Description](https://github.com/Daxiongmao87/foundryvtt-custom-world-logo/blob/main/images/screenshot-insert-image-alternative-description.png?raw=true)
 
